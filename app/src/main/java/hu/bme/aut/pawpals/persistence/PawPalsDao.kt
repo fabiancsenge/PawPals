@@ -1,4 +1,19 @@
 package hu.bme.aut.pawpals.persistence
 
-class PawPalsDao {
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.Query
+import dagger.Provides
+import javax.inject.Singleton
+
+@Dao
+interface PawPalsDao {
+    @Query("SELECT * FROM walk")
+    fun getAll(): List<Walk>
+
+    @Insert
+    fun insertAll(vararg walk: Walk)
+
+    @Query("DELETE FROM walk")
+    fun deleteAll()
 }
