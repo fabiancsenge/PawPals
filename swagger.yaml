@@ -1,0 +1,161 @@
+openapi: 3.0.3
+info:
+  title: PawPals App
+  description: "API for PawPals App"
+  termsOfService: http://swagger.io/terms/
+  contact:
+    name: Fábián Csenge
+    email: csengefabian@gmail.com
+  version: 1.0.0
+servers:
+  - url: https://dog.ceo/api
+  - url: https://fakerapi.it/api/v1
+tags:
+  - name: image
+    description: Picture of the dog
+  - name: walk
+    description: Details of the walk
+paths:
+  /breeds/image/random:
+    servers:
+      - url: https://dog.ceo/api
+    get:
+      tags:
+        - image
+      summary: Query image of the dog
+      operationId: handleQueryDogImage
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Image'
+  /custom:
+    servers:
+      - url: https://fakerapi.it/api/v1
+    get:
+      tags:
+        - walk
+      summary: Query details of the walk
+      operationId: handleQueryWalk
+      parameters:
+        - in: query
+          name: _quantity
+          required: true
+          schema:
+            type: string
+            enum:
+              - '1'
+            default: '1'
+        - in: query
+          name: name
+          required: true
+          schema:
+            type: string
+            enum:
+              - name
+            default: name
+        - in: query
+          name: phone
+          required: true
+          schema:
+            type: string
+            enum:
+              - phone
+            default: phone
+        - in: query
+          name: city
+          required: true
+          schema:
+            type: string
+            enum:
+              - city
+            default: city
+        - in: query
+          name: street
+          required: true
+          schema:
+            type: string
+            enum:
+              - streetName
+            default: streetName
+        - in: query
+          name: building
+          required: true
+          schema:
+            type: string
+            enum:
+              - buildingNumber
+            default: buildingNumber
+        - in: query
+          name: dogname
+          required: true
+          schema:
+            type: string
+            enum:
+              - pokemon
+            default: pokemon
+        - in: query
+          name: _locale
+          required: true
+          schema:
+            type: string
+            enum:
+              - hu_HU
+            default: hu_HU
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                 $ref: '#/components/schemas/Walk'
+components:
+  schemas:
+    Image:
+      type: object
+      properties:
+        message:
+          type: string
+          example: https:\/\/images.dog.ceo\/breeds\/mastiff-tibetan\/n02108551_226.jpg
+        status:
+          type: string
+          example: succes
+    WalkDetails:
+      type: object
+      properties:
+        name:
+          type: string
+          example: Zsolt Tamás
+        phone:
+          type: string
+          example: '+9705730874299'
+        city:
+          type: string
+          example: Miskolc
+        street:
+          type: string
+          example: Martina fasor
+        building:
+          type: string
+          example: '180'
+        dogname:
+          type: string
+          example: Mienfoo
+    Walk:
+      type: object
+      properties:
+        status:
+          type: string
+          example: OK
+        code:
+          type: integer
+          example: 200
+        total:
+          type: integer
+          example: 1
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/WalkDetails'

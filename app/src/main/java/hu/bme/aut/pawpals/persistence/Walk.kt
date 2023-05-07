@@ -1,7 +1,11 @@
-package hu.bme.aut.pawpals.model
+package hu.bme.aut.pawpals.persistence
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity
 data class Walk(
-    val id: Number,
+    @PrimaryKey val id: Int,
     val dogImageUrl: String,
     val dogName: String,
     val meetingPoint: String,
