@@ -12,7 +12,7 @@ interface PawPalsDao {
     fun getAll(): List<Walk>
 
     @Insert
-    fun insertAll(vararg quotes: Walk)
+    fun insertAll(vararg walk: Walk)
 
     @Query("DELETE FROM walk")
     fun deleteAll()

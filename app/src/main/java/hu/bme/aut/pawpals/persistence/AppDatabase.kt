@@ -5,5 +5,5 @@ import androidx.room.RoomDatabase
 
 @Database(entities = [Walk::class], version = 1)
 abstract class AppDatabase : RoomDatabase() {
-    abstract fun quoteDao(): PawPalsDao
+    abstract fun pawpalsDao(): PawPalsDao
 }
