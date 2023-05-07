@@ -1,6 +1,7 @@
 package hu.bme.aut.pawpals.model
 
 data class Walk(
+    val dogImageUrl: String,
     val dogName: String,
     val meetingPoint: String,
     val date: String,
