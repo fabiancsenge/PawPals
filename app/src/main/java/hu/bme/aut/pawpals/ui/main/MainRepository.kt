@@ -1,4 +1,6 @@
 package hu.bme.aut.pawpals.ui.main
 
-class MainRepository {
+import javax.inject.Inject
+
+class MainRepository @Inject constructor() {
 }
