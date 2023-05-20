@@ -4,15 +4,20 @@ import hu.bme.aut.pawpals.persistence.PawPalsDao
 import hu.bme.aut.pawpals.persistence.Walk
 
 class MockPawPalsDao: PawPalsDao {
+    companion object {
+        private val  walks = mutableListOf<Walk>()
+    }
     override fun getAll(): List<Walk> {
-        TODO("Not yet implemented")
+        return walks
     }
 
     override fun insertAll(vararg walk: Walk) {
-        TODO("Not yet implemented")
+        walk.forEach {
+            walks.add(it)
+        }
     }
 
     override fun deleteAll() {
-        TODO("Not yet implemented")
+        walks.clear()
     }
 }
