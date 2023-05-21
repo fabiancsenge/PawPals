@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1053650635878",
+    "project_id": "fbin-csenge",
+    "storage_bucket": "fbin-csenge.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053650635878:android:d121a3c213fb16fe5f71a7",
+        "android_client_info": {
+          "package_name": "hu.bme.aut.pawpals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053650635878-2v78ftnltqqlmilfg3j1bem28tb2nho3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApTbdgtqIqEuNwDAjETVKCRsc9xjSoiwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053650635878-2v78ftnltqqlmilfg3j1bem28tb2nho3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
