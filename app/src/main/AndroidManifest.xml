@@ -2,7 +2,7 @@
     package="hu.bme.aut.pawpals">
 
     <application
-        android:name=".PawPals"
+        android:name="hu.bme.aut.pawpals.PawPals"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"

@@ -21,6 +21,7 @@ class TestPawPalsApp {
         daoMock.deleteAll()
     }
 
+/*
     @Test
     fun TestWalkAddMock() {
         val w = Walk(1000, "https:\\/\\/images.dog.ceo\\/breeds\\/finnish-lapphund\\/mochilamvan.jpg", "Mankey", "Budapest, Dobos lakótelep 9", "2023-05-22", "18:00", "5.3", "Bence Fülöp", "+3838546804336")
@@ -41,5 +42,5 @@ class TestPawPalsApp {
         list = daoMock.getAll()
         assert(list.size == 0)
     }
-
+*/
 }

@@ -19,12 +19,14 @@ class MainViewModel @Inject constructor(private val interactor: WalksInteractor)
     fun loadWalks() {
         viewModelScope.launch {
         }
+        val exampleWalks = listOf(
+            Walk(1000, "https:\\/\\/images.dog.ceo\\/breeds\\/finnish-lapphund\\/mochilamvan.jpg", "Mankey", "Budapest, Dobos lakótelep 9", "2023-05-22", "18:00", "5.3", "Bence Fülöp", "+3838546804336")
+        )
+        walks.value = exampleWalks
     }
 
 }
 
-class WalksInteractor @Inject constructor(
-
-) {
+class WalksInteractor @Inject constructor() {
 
 }

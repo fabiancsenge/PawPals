@@ -28,10 +28,10 @@ class DetailsFragment: Fragment() {
         _binding = FragmentDetailsBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textDetails
+        /*val textView: TextView = binding.textDetails
         detailsViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
-        }
+        }*/
         return root
     }
 
