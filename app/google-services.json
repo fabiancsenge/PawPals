@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "1053650635878",
-    "project_id": "fbin-csenge",
-    "storage_bucket": "fbin-csenge.appspot.com"
+    "project_number": "812895047049",
+    "project_id": "pawpals-33141",
+    "storage_bucket": "pawpals-33141.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1053650635878:android:d121a3c213fb16fe5f71a7",
+        "mobilesdk_app_id": "1:812895047049:android:9bfc015b4afc0ef75b2558",
         "android_client_info": {
           "package_name": "hu.bme.aut.pawpals"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1053650635878-2v78ftnltqqlmilfg3j1bem28tb2nho3.apps.googleusercontent.com",
+          "client_id": "812895047049-2h2q73hmub3k3vtomld7v9q51qugdfgp.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyApTbdgtqIqEuNwDAjETVKCRsc9xjSoiwc"
+          "current_key": "AIzaSyDQt5Wyk9zX9k9ssm6X60J1tbCf9UZlLRU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1053650635878-2v78ftnltqqlmilfg3j1bem28tb2nho3.apps.googleusercontent.com",
+              "client_id": "812895047049-2h2q73hmub3k3vtomld7v9q51qugdfgp.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
